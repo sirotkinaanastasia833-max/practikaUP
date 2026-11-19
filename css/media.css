@@ -1,0 +1,265 @@
+@media (max-width: 1024px) {
+  .header_container,
+  .hero_container,
+  .features_container,
+  .stats_container,
+  .about_container,
+  .footer_container {
+    padding: 0 20px;
+  }
+  .features_container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 0;
+  }
+  .features_item:nth-child(2) {
+    border-right: none;
+  }
+  .about_container {
+    gap: 30px;
+  }
+  .hero_title {
+    font-size: 40px;
+  }
+    .header_nav {
+    display: none; 
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--background);
+    flex-direction: column;
+    padding: 20px;
+    gap: 15px;
+    border-bottom: 1px solid #333;
+    z-index: 10;
+  }
+
+  .header_nav.active {
+    display: flex;
+  }
+
+  .header_burger {
+    display: flex;
+  }
+  .header_btn {
+    display: none;
+  }
+
+
+
+  .quizzes_slider {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+  .rules_section {
+    padding: 60px 20px; 
+  }
+  .quiz_card:nth-child(3) {
+    display: none;
+  }
+
+
+
+  .menu_container {
+    padding: 0 20px;
+  }
+  .menu_grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  .menu_categories {
+    gap: 10px;
+  }
+  .category_btn {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+
+
+@media (max-width: 744px) {
+  .header_container {
+    gap: 40px;
+  }
+  .header_nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  .hero_container {
+    height: auto;
+    padding: 60px 20px;
+    background-position: center;
+  }
+  .hero_title {
+    font-size: 32px;
+  }
+
+
+  .features_container {
+    grid-template-columns: 1fr;
+    gap: 30px 0;
+  }
+  .features_item {
+    border-right: none;
+    border-bottom: 1px solid var(--text-description);
+    padding: 0 0 30px 0;
+  }
+  .features_item:last-child {
+    border-bottom: none;
+  }
+
+
+  .stats_container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 0;
+  }
+  .stats_number {
+    font-size: 36px;
+  }
+
+
+  .call {
+    padding: 50px 0;
+  }
+  .call_title {
+    font-size: 28px;
+  }
+
+
+  .about {
+    padding: 50px 0;
+  }
+  .about_container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about_content {
+    align-items: center;
+  }
+  .about_title {
+    font-size: 28px;
+  }
+  .about_image_wrapper {
+    max-width: 100%;
+  }
+
+
+  .footer_container {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .header_btn {
+    display: none;
+  }
+
+
+  .quiz_card:nth-child(3) {
+    display: none;
+  }
+  .quizzes {
+    padding: 50px 0;
+  }
+  .quizzes_container {
+    padding: 0 20px;
+  }
+  .quizzes_title, 
+  .rules_title {
+    font-size: 32px;
+  }
+  .quizzes_slider {
+    grid-template-columns: 1fr;
+  }
+  .quiz_card {
+    height: auto;
+    min-height: 450px; 
+  }
+  .rules_section {
+    padding: 50px 20px;
+  }
+
+  .quiz_card:nth-child(2),
+  .quiz_card:nth-child(3) {
+    display: none;
+  }
+  .slider_arrow {
+    top: 200px; 
+    transform: translateY(-50%);
+  }
+  .slider_arrow_left {
+    left: -35px;
+  }
+  .slider_arrow_right {
+    right: 25px;
+  }
+
+
+  .menu_main_title {
+    font-size: 32px;
+  }
+  .menu_section_title {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .menu_grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .menu_categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  .category_btn {
+    font-size: 14px;
+    padding: 8px 14px;
+  }
+  .menu_card_image {
+    height: 180px;
+  }
+}
+
+
+
+
+
+@media (max-width: 402px) {
+  .hero_title {
+    font-size: 24px; 
+  }
+  .call_title {
+    font-size: 22px;
+  }
+
+  .stats_container {
+    grid-template-columns: 1fr;
+    gap: 40px 0; 
+  }
+  
+  .stats_number {
+    font-size: 40px; 
+  }
+  
+  .stats_label {
+    font-size: 16px;
+  }
+
+
+  .menu_container {
+    padding: 0 15px;
+  }
+  .menu_main_title {
+    font-size: 28px;
+  }
+  .menu_section_title {
+    font-size: 18px;
+  }
+  .menu_card_title {
+    padding: 10px;
+    font-size: 14px;
+  }
+}

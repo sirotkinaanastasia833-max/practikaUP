@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Было дело</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header_container">
+            <a href="#" class="header_logo">
+                <img src="assets/images/logo.svg" alt="Логотип">
+            </a>
+            <nav class="header_nav" id="mobile-menu">
+                <a href="home.html" class="header_link">Главная</a>
+                <a href="#" class="header_link">Игры</a>
+                <a href="menu.html" class="header_link">Меню</a>
+                <a href="#" class="header_link">О нас</a>
+                <a href="#" class="header_link">Контакты</a>
+            </nav>
+
+            <button class="header_btn">Забронировать стол</button>
+            <button class="header_burger" id="burger-btn" aria-label="Открыть меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="quizzes">
+            <div class="quizzes_container">
+                <div class="quizzes_header">
+                    <h1 class="quizzes_title">Квизы</h1>
+                    <p class="quizzes_description">
+                        Выберите эпоху, соберите команду и проверьте, насколько хорошо вы помните то, чего уже нет.
+                        Каждый квиз — это новое "дело" из архива.
+                    </p>
+                </div>
+
+                <div class="quizzes_slider">
+                    <button class="slider_arrow slider_arrow_left">
+                        <img src="assets/images/arrow_left.svg" alt="Влево">
+                    </button>
+                    <div class="quiz_card" style="background-image: url('assets/images/quiz1.png');">
+                        <div class="quiz_card_content">
+                            <h3 class="quiz_card_title">Золотой век</h3>
+                            <p class="quiz_card_text">Окунитесь в эпоху балов, дуэлей и громких имён. Проверьте,
+                                насколько хорошо вы знакомы с великими людьми и событиями XIX века.</p>
+                            <button class="quiz_card_btn">Забронировать</button>
+                        </div>
+                    </div>
+                    <div class="quiz_card" style="background-image: url('assets/images/quiz2.png');">
+                        <div class="quiz_card_overlay"></div>
+                        <div class="quiz_card_content">
+                            <h3 class="quiz_card_title">Назад в СССР</h3>
+                            <p class="quiz_card_text">От лозунгов и плакатов до быта простых граждан. Проверьте,
+                                насколько хорошо вы знаете историю, культуру и реалии советской эпохи.</p>
+                            <button class="quiz_card_btn">Забронировать</button>
+                        </div>
+                    </div>
+                    <div class="quiz_card" style="background-image: url('assets/images/quiz3.png');">
+                        <div class="quiz_card_overlay"></div>
+                        <div class="quiz_card_content">
+                            <h3 class="quiz_card_title">Лихие нулевые</h3>
+                            <p class="quiz_card_text">Это время запомнилось яркими клипами, первыми мобильными
+                                телефонами и шумными вечеринками. Вспомните главные тренды и мемы начала 2000-х.</p>
+                            <button class="quiz_card_btn">Забронировать</button>
+                        </div>
+                    </div>
+                    <button class="slider_arrow slider_arrow_right">
+                        <img src="assets/images/arrow_right.svg" alt="Вправо">
+                    </button>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="rules_section_wrapper">
+            <section class="rules_section">
+                <div class="rules_header">
+                    <h1 class="rules_title">Правила игры</h1>
+                </div>
+                <section class="features">
+                    <div class="features_container">
+                        <div class="features_item">
+                            <img src="assets/images/users.svg" alt="Иконка звезды" class="features_icon">
+                            <h3 class="features_title">Собираете команду</h3>
+                            <p class="features_text">от 2 до 6 человек</p>
+                        </div>
+
+                        <div class="features_item">
+                            <img src="assets/images/telephone.svg" alt="Иконка друзей" class="features_icon">
+                            <h3 class="features_title">Убираете телефоны</h3>
+                            <p class="features_text">никакого гуглинга, только ваши знания</p>
+                        </div>
+
+                        <div class="features_item">
+                            <img src="assets/images/tick.svg" alt="Иконка еды" class="features_icon">
+                            <h3 class="features_title">Отвечаете на вопросы</h3>
+                            <p class="features_text">6 раундов, от простых до сложных</p>
+                        </div>
+
+                        <div class="features_item">
+                            <img src="assets/images/medal.svg" alt="Иконка календаря" class="features_icon">
+                            <h3 class="features_title">Побеждаете</h3>
+                            <p class="features_text">призы, скидки и слава лучших знатоков</p>
+                        </div>
+
+                    </div>
+                </section>
+            </section>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer_container">
+            <a href="#" class="footer_link">Политика конфиденциальности</a>
+            <div class="footer_info">
+                <span>Было дело</span>
+                <span>2026</span>
+            </div>
+            <a href="#" class="footer_link">Договор оферты</a>
+        </div>
+    </footer>
+
+
+    <div class="modal" id="booking-modal">
+        <div class="modal_content">
+            <button class="modal_close" id="modal-close">&times;</button>
+
+            <h2 class="modal_title">Бронирование</h2>
+
+            <form class="modal_form" action="#">
+                <div class="form_group">
+                    <input type="text" placeholder="ФИО" class="form_input" required>
+                </div>
+
+                <div class="form_group">
+                    <label class="form_label">Квиз</label>
+                    <div class="radio_group">
+                        <label class="radio_label">
+                            <input type="radio" name="quiz" value="gold" checked>
+                            <span>Золотой век</span>
+                        </label>
+                        <label class="radio_label">
+                            <input type="radio" name="quiz" value="ussr">
+                            <span>Назад в СССР</span>
+                        </label>
+                        <label class="radio_label">
+                            <input type="radio" name="quiz" value="2000s">
+                            <span>Лихие нулевые</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form_group">
+                    <label class="form_label">Количество человек</label>
+                    <input type="number" min="1" placeholder="2" class="form_input" required>
+                </div>
+
+                <div class="form_group">
+                    <label class="form_label">Дата и время</label>
+                    <input type="datetime-local" class="form_input" required>
+                </div>
+
+                <button type="submit" class="modal_btn">Забронировать</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="toast" id="success-toast">
+        <div class="toast_content">
+            <span class="toast_text">Успешно<br>забронировано</span>
+            <img src="assets/images/check.svg" alt="Галочка" class="toast_icon">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

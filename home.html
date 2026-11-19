@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Было дело</title>
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header_container">
+      <a href="#" class="header_logo">
+        <img src="assets/images/logo.svg" alt="Логотип">
+      </a>
+      <nav class="header_nav" id="mobile-menu">
+        <a href="#" class="header_link">Главная</a>
+        <a href="game.html" class="header_link">Игры</a>
+        <a href="menu.html" class="header_link">Меню</a>
+        <a href="#" class="header_link">О нас</a>
+        <a href="#" class="header_link">Контакты</a>
+      </nav>
+
+      <button class="header_btn">Забронировать стол</button>
+      <button class="header_burger" id="burger-btn" aria-label="Открыть меню">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero_container">
+        <div class="text_hero">
+          <span class="hero_preface">квиз-кафе</span>
+          <h1 class="hero_title">Проверь свои <br><span class="text-yellow">знания и друзей</span></h1>
+          <p class="hero_description">Увлекательные квизы, вкусная еда и отличная компания - все, что нужно для
+            идеального вечера.</p>
+          <a href="game.html" class="hero_btn">Посмотреть игры</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="features_container">
+        <div class="features_item">
+          <img src="assets/images/star.svg" alt="Иконка звезды" class="features_icon">
+          <h3 class="features_title">Интересные квизы</h3>
+          <p class="features_text">Разные темы, уровни сложности и форматы</p>
+        </div>
+
+        <div class="features_item">
+          <img src="assets/images/users.svg" alt="Иконка друзей" class="features_icon">
+          <h3 class="features_title">Дружеская атмосфера</h3>
+          <p class="features_text">Играйте в команде или находите новых друзей</p>
+        </div>
+
+        <div class="features_item">
+          <img src="assets/images/coffe.svg" alt="Иконка еды" class="features_icon">
+          <h3 class="features_title">Вкусная еда и напитки</h3>
+          <p class="features_text">Меню для любого настроения</p>
+        </div>
+
+        <div class="features_item">
+          <img src="assets/images/calendar.svg" alt="Иконка календаря" class="features_icon">
+          <h3 class="features_title">Удобная бронь</h3>
+          <p class="features_text">Забронируйте столик онлайн за пару кликов</p>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="stats_container">
+
+        <div class="stats_item">
+          <span class="stats_number">500+</span>
+          <span class="stats_label">вопросов</span>
+        </div>
+
+        <div class="stats_item">
+          <span class="stats_number">120</span>
+          <span class="stats_label">мест</span>
+        </div>
+
+        <div class="stats_item">
+          <span class="stats_number">24/7</span>
+          <span class="stats_label">онлайн квизы</span>
+        </div>
+
+        <div class="stats_item">
+          <span class="stats_number">4.9</span>
+          <span class="stats_label">рейтинг</span>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="call">
+      <div class="call_container">
+        <h2 class="call_title">Готовы проверить свои<br>знания?</h2>
+        <p class="call_text">
+          Собирайте команду, выбирайте эпоху и приходите в «Было дело».<br>
+          Интеллектуальный вечер, вкусная еда и азарт гарантированы.
+        </p>
+        <button class="call_btn">Забронировать стол</button>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="about_container">
+        <div class="about_image_wrapper">
+          <img src="assets/images/company.png" alt="Компания за столом" class="about_image">
+        </div>
+        <div class="about_content">
+          <span class="about_subtitle">Про формат</span>
+          <h2 class="about_title">
+            Собираем друзей за<br>
+            <span class="text_yellow">одним столом</span>
+          </h2>
+          <p class="about_text">
+            «Было Дело» — это место, где старинные игры встречаются с современным квизом. Мы создали пространство, где
+            можно отключиться от телефонов, обсудить исторические факты, посмеяться над сложными вопросами и просто
+            вкусно поесть в приятной компании.
+          </p>
+          <button class="about_btn">Забронировать стол</button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer_container">
+        <a href="#" class="footer_link">Политика конфиденциальности</a>
+        <div class="footer_info">
+          <span>Было дело</span>
+          <span>2026</span>
+        </div>
+        <a href="#" class="footer_link">Договор оферты</a>
+      </div>
+    </footer>
+  </main>
+
+
+
+  <div class="modal" id="booking-modal">
+    <div class="modal_content">
+      <button class="modal_close" id="modal-close">&times;</button>
+
+      <h2 class="modal_title">Бронирование</h2>
+
+      <form class="modal_form" action="#">
+        <div class="form_group">
+          <input type="text" placeholder="ФИО" class="form_input" required>
+        </div>
+
+        <div class="form_group">
+          <label class="form_label">Квиз</label>
+          <div class="radio_group">
+            <label class="radio_label">
+              <input type="radio" name="quiz" value="gold" checked>
+              <span>Золотой век</span>
+            </label>
+            <label class="radio_label">
+              <input type="radio" name="quiz" value="ussr">
+              <span>Назад в СССР</span>
+            </label>
+            <label class="radio_label">
+              <input type="radio" name="quiz" value="2000s">
+              <span>Лихие нулевые</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="form_group">
+          <label class="form_label">Количество человек</label>
+          <input type="number" min="1" placeholder="2" class="form_input" required>
+        </div>
+
+        <div class="form_group">
+          <label class="form_label">Дата и время</label>
+          <input type="datetime-local" class="form_input" required>
+        </div>
+
+        <button type="submit" class="modal_btn">Забронировать</button>
+      </form>
+    </div>
+  </div>
+  <div class="toast" id="success-toast">
+    <div class="toast_content">
+      <span class="toast_text">Успешно<br>забронировано</span>
+      <img src="assets/images/check.svg" alt="Галочка" class="toast_icon">
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

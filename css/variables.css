@@ -1,0 +1,21 @@
+:root {
+  --bg-color: #fff;
+  --font-family: 'Montserrat', sans-serif;
+  --text-base: 16px;
+  --text-sm: 14px;
+  --text-xl: 20px;
+  
+  --padding-s: 10px;
+  --padding-m: 14px;
+  --padding-l: 18px;
+
+  --background: #0C0C0C;
+  --black: #000000;
+  --secondary: #F7DF70;
+  --text-light: #ffffff;
+  --text-muted: #a0a0a0;
+  --text-description: #ccc;
+  --color-grey:#333;
+  --light-grey:#888;
+  --grey:#1a1a1a;
+}

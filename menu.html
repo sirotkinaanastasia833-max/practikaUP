@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Было дело</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header_container">
+            <a href="#" class="header_logo">
+                <img src="assets/images/logo.svg" alt="Логотип">
+            </a>
+            <nav class="header_nav" id="mobile-menu">
+                <a href="home.html" class="header_link">Главная</a>
+                <a href="game.html" class="header_link">Игры</a>
+                <a href="#" class="header_link">Меню</a>
+                <a href="#" class="header_link">О нас</a>
+                <a href="#" class="header_link">Контакты</a>
+            </nav>
+
+            <button class="header_btn">Забронировать стол</button>
+            <button class="header_burger" id="burger-btn" aria-label="Открыть меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="menu_page">
+        <div class="menu_container">
+            <h1 class="menu_main_title">Меню</h1>
+            <div class="menu_categories">
+                <a href="#starters" class="category_btn">Закуски</a>
+                <a href="#hot" class="category_btn">Горячее</a>
+                <a href="#drinks" class="category_btn">Старинные напитки</a>
+                <a href="#desserts" class="category_btn">Десерты</a>
+            </div>
+            <section class="menu_section" id="starters">
+                <h2 class="menu_section_title">Закуски "К делу"</h2>
+                <div class="menu_grid">
+                    <div class="menu_card">
+                        <img src="assets/images/cheeses.jpg" alt="Сыры" class="menu_card_image">
+                        <span class="menu_card_title">Сыры</span>
+                    </div>
+                    <div class="menu_card">
+                        <img src="assets/images/pickles.jpg" alt="Соленья" class="menu_card_image">
+                        <span class="menu_card_title">Соленья</span>
+                    </div>
+                    <div class="menu_card">
+                        <img src="assets/images/nuts.jpg" alt="Орешки" class="menu_card_image">
+                        <span class="menu_card_title">Орешки</span>
+                    </div>
+                    <div class="menu_card">
+                        <img src="assets/images/croutons.jpg" alt="Гренки" class="menu_card_image">
+                        <span class="menu_card_title">Гренки</span>
+                    </div>
+                </div>
+            </section>
+            <section class="menu_section" id="hot">
+                <h2 class="menu_section_title">Горячее "По-купечески"</h2>
+                <div class="menu_grid">
+                    <div class="menu_card">
+                        <img src="assets/images/dumplings.jpg" alt="Пельмени" class="menu_card_image">
+                        <span class="menu_card_title">Пельмени</span>
+                    </div>
+                    <div class="menu_card">
+                        <img src="assets/images/meatballs.jpg" alt="Фрикадельки" class="menu_card_image">
+                        <span class="menu_card_title">Фрикадельки</span>
+                    </div>
+                    <div class="menu_card">
+                        <img src="assets/images/soup.jpg" alt="Супы" class="menu_card_image">
+                        <span class="menu_card_title">Супы</span>
+                    </div>
+                </div>
+            </section>
+            <section class="menu_section" id="drinks">
+                <h2 class="menu_section_title">Старинные напитки</h2>
+                <div class="menu_grid">
+                    <div class="menu_card">
+                        <img src="assets/images/tea.jpg" alt="Травяные чаи" class="menu_card_image">
+                        <span class="menu_card_title">Травяные чаи</span>
+                    </div>
+                    <div class="menu_card">
+                        <img src="assets/images/drink.jpg" alt="Морсы и компоты" class="menu_card_image">
+                        <span class="menu_card_title">Морсы и компоты</span>
+                    </div>
+                    <div class="menu_card">
+                        <img src="assets/images/sbiten.jpg" alt="Сбитень" class="menu_card_image">
+                        <span class="menu_card_title">Сбитень</span>
+                    </div>
+                </div>
+            </section>
+            <section class="menu_section" id="desserts">
+                <h2 class="menu_section_title">Десерты "К чаю"</h2>
+                <div class="menu_grid">
+                    <div class="menu_card">
+                        <img src="assets/images/cake.jpg" alt="Медовик" class="menu_card_image">
+                        <span class="menu_card_title">Медовик</span>
+                    </div>
+                    <div class="menu_card">
+                        <img src="assets/images/jam.jpg" alt="Варенье" class="menu_card_image">
+                        <span class="menu_card_title">Варенье</span>
+                    </div>
+                    <div class="menu_card">
+                        <img src="assets/images/pastila.jpg" alt="Пастила" class="menu_card_image">
+                        <span class="menu_card_title">Пастила</span>
+                    </div>
+                    <div class="menu_card">
+                        <img src="assets/images/cookies.jpg" alt="Печенье" class="menu_card_image">
+                        <span class="menu_card_title">Печенье</span>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer_container">
+            <a href="#" class="footer_link">Политика конфиденциальности</a>
+            <div class="footer_info">
+                <span>Было дело</span>
+                <span>2026</span>
+            </div>
+            <a href="#" class="footer_link">Договор оферты</a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

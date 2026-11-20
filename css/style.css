@@ -194,8 +194,8 @@ html {
 }
 .stats {
   padding: 60px 0;
-  border-top: 1px solid #333; 
-  border-bottom: 1px solid #333; 
+  border-top: 1px solid var(--color-grey); 
+  border-bottom: 1px solid var(--color-grey); 
 }
 .stats_container {
   max-width: 1440px;
@@ -436,7 +436,7 @@ html {
 
 
 .quiz_card {
-  background-color: #1a1a1a;
+  background-color: var(--grey);
   border-radius: 15px;
   overflow: hidden;
   display: flex;
@@ -615,8 +615,7 @@ html {
   width: 100%;
   max-width: 600px;
   position: relative;
-  border: 1px solid #333;
-  margin: 20px;
+  border: 1px solid var(--color-grey);
 }
 .modal_close {
   position: absolute;
@@ -624,7 +623,7 @@ html {
   right: 20px;
   background: transparent;
   border: none;
-  color: #fff;
+  color: var(--text-light);
   font-size: 30px;
   line-height: 1;
   cursor: pointer;
@@ -645,15 +644,15 @@ html {
 }
 .form_label {
   display: block;
-  color: #888;
+  color: var(--light-grey);
   font-size: 14px;
   margin-bottom: 8px;
 }
 .form_input {
   width: 100%;
   background-color: transparent;
-  border: 1px solid #555;
-  color: #fff;
+  border: 1px solid var(--dark-grey);
+  color: var(--light-grey);
   padding: 12px 15px;
   border-radius: 5px;
   font-family: inherit;
@@ -665,7 +664,7 @@ html {
   border-color: var(--secondary);
 }
 .form_input::placeholder {
-  color: #555;
+  color: var(--dark-grey);
 }
 .radio_group {
   display: flex;
@@ -676,7 +675,7 @@ html {
   display: flex;
   align-items: center;
   gap: 10px;
-  color: #fff;
+  color: var(--text-light);
   cursor: pointer;
   font-size: 16px;
 }
@@ -684,7 +683,7 @@ html {
   appearance: none;
   width: 20px;
   height: 20px;
-  border: 2px solid #555;
+  border: 2px solid var(--dark-grey);
   border-radius: 50%;
   outline: none;
   cursor: pointer;

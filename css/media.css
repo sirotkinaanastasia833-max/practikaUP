@@ -56,6 +56,9 @@
   .quiz_card:nth-child(3) {
     display: none;
   }
+  .quiz_card{
+    width: 320px;
+  }
 
 
 
@@ -192,7 +195,7 @@
     left: -35px;
   }
   .slider_arrow_right {
-    right: 25px;
+    right: 3px;
   }
 
 
